@@ -41,4 +41,4 @@ react.production.js: This file is optimized for production use. It does not incl
 in the development version. It is smaller in size and optimized for performance.
 
 async and defer:
-	async allows scripts to be executed as soon as they're downloaded, while defer defers execution until after the HTML parsing is complete.
+	async allows scripts to be executed as soon as they're downloaded, while defer refers execution until after the HTML parsing is complete.
