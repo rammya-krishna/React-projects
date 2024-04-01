@@ -1,3 +1,6 @@
+import React from 'react';
+
+import ReactDOM from 'react-dom';
 
 {/* <div id="firstparent">
     <div id="secondparent">
@@ -17,7 +20,7 @@ const headings =React.createElement
         ("h1",{id:"second"},"second")])
 
 );
-console.log(headings) //object
+
 const root_=ReactDOM.createRoot(document.getElementById("root"));
 root_.render(headings)
     

@@ -1,44 +1,89 @@
-Emmet:
-	Emmet is a powerful toolkit  tool for web developers, it provides shortcuts and abbreviations for writing HTML and CSS code quickly and efficiently 
- and with fewer keystrokes,ultimately improving productivity and reducing development time
+NPM is a package manager for JavaScript programming language, primarily used for managing and installing packages/modules
 
-Library and Framework:
-  Frameworks and libraries are both code written by someone else that helps you perform some common tasks in a less verbose way.
+Web bundlers will bundle multiple JavaScript files into a single file, reducing the number of network requests and improving performance.
 
-  A library is a collection of reusable code modules or functions that can be used by other software.
-  Developers have more control over the flow of their application when using libraries because they can choose which functions or classes to use 
-  and how to integrate them into their code.
+Webpack  — An open-source JavaScript module bundler that is used to bundle JavaScript code and other assets such as images, CSS, and fonts into a format that can be executed in a browser. Webpack was created and was first released in 2012. It has since become one of the most popular bundlers in the web development community.
 
-  A framework is a more comprehensive structure that provides a foundation for building an entire application. 
-  It dictates the overall architecture and flow of the application.
-  Frameworks usually provide a range of functionalities beyond what libraries offer, including tools for handling routing, database interactions, authentication, and more.
+Parcel — An open-source web bundler that was first released in 2017. It is designed to be a simple and easy-to-use tool for bundling web apps. Parcel is known for its zero configuration approach, which means that it can automatically detect and bundle all assets and dependencies without requiring any configuration from the developer.
 
-CDN:
-	A Content Delivery Network (CDN) is a network of distributed servers strategically placed in various data centers across the globe. 
- The primary purpose of a CDN is to deliver web content more efficiently to users by reducing latency, faster Content Delivery ,
- improving website performance, and enhancing overall user experience.
+The .parcel-cache directory is created by Parcel during the build process.
+It stores cached data to speed up subsequent builds. When you make changes to your code, Parcel checks this cache to avoid unnecessary reprocessing.
+It’s safe to ignore or exclude from version control.
 
-React known as React:
-	It "reacts" quickly to changes without reloading the whole page.
-	It uses the virtual DOM to efficiently update parts of a webpage.
-	It’s built around components that "react" and update.
-	When data changes, React compares the virtual DOM with the previous version, calculates the most efficient way to update the actual DOM, and applies the necessary changes.
+npx is a command-line utility that comes with Node.js.
+It allows you to execute Node packages directly from the command line without installing them globally.
 
-crossorigin in script tag:
-	The crossorigin attribute, indicating that the browser should fetch the script without sending any credentials or with user credential.
-	The crossorigin attribute helps mitigate security risks associated with loading resources from different origins, 
- particularly in the context of Cross-Origin Resource Sharing (CORS) policies implemented by browsers to protect against certain types of attacks, such as cross-site scripting (XSS).
+In package.json, dependencies are packages required for your application to run in production.
+DevDependencies are packages needed only during development (e.g., testing frameworks, build tools).
+Dependencies are installed when you run npm install, while devDependencies are installed with npm install --save-dev
 
-React and ReactDOM :
- React is the core library for building user interfaces in JavaScript, providing features for creating components, managing state, and handling component lifecycles. 
- ReactDOM, is a package that provides bindings between React and the DOM, allowing React components to be rendered into the browser and interact with the web page's DOM.
- 
-react.development.js and react.production.js files via CDN:
+Tree shaking is an optimization technique used by bundlers like Webpack and Parcel.
+It eliminates unused code (dead code) from your final bundle.
+During the bundling process, the tool analyzes your code and removes any parts that aren’t actually used.
+This results in smaller bundle sizes and faster load times.
 
-react.development.js: This file is meant for development purposes. It includes additional warnings, error messages, and debugging features to aid developers during 
-the development process. It is larger in size compared to the production version because of the additional development tools and checks it contains.
-react.production.js: This file is optimized for production use. It does not include the extra development warnings, debugging features, or error messages present 
-in the development version. It is smaller in size and optimized for performance.
+HMR (Hot Module Replacement) is a feature offered by bundlers like Webpack and Parcel.
+It allows you to update code in the browser without a full page reload during development.
+When you make changes to your code, HMR automatically replaces the modified modules without losing the application’s state.
+It speeds up the feedback loop when iterating on your code.
 
-async and defer:
-	async allows scripts to be executed as soon as they're downloaded, while defer defers execution until after the HTML parsing is complete.
+Parcel features:
+Zero-Configuration: Parcel requires no complex setup. Just start with an HTML file, add your assets (CSS, JS, images), and Parcel handles the bundling automatically.
+Fast Refresh: Parcel supports React Fast Refresh, providing quick feedback as you edit your code without reloading the page.
+Built-in Development Server: Parcel comes with a built-in development server for easy testing and debugging.
+
+gitignore file specifies intentionally untracked files that Git should ignore.
+It ensures that certain files (like build artifacts, logs, or temporary files) are not committed to version control.
+Do add: Files that should be ignored (e.g., compiled code, logs).
+Do not add: Files that should be tracked (e.g., source code, configuration files)
+
+
+package.json: Contains metadata about the project, dependencies, and scripts.
+package-lock.json: Records the exact versions of dependencies installed. Ensures consistent builds across environments.
+
+package-lock.json is auto-generated and reflects the exact dependency tree.
+Modifying it manually can lead to inconsistencies and unexpected behavior.
+Let npm handle it automatically.
+
+node_modules:
+The node_modules directory contains installed dependencies for your project.
+Not recommended to push it to Git. Instead, include it in your .gitignore.
+
+dist folder:
+The dist (distribution) folder contains production-ready code.
+It’s generated by bundlers like Parcel or Webpack.
+Typically, you deploy the contents of this folder to a web server.
+
+browserlist:
+A configuration file that defines target browsers for your project.
+Used by tools like Babel and Autoprefixer to transpile and prefix CSS based on browser compatibility.
+Helps ensure your app works well across different browsers.
+
+
+Caret (^): Updates to all future minor and patch versions, without incrementing the major version.
+Tilde (~): Updates to all future patch versions, without incrementing the minor version.
+
+
+The <script type="application/javascript"> element is commonly used to embed executable code or data in an HTML document.
+
+An import map is a way to define module import mappings for JavaScript modules.
+It allows you to specify aliases for module paths, making it easier to manage dependencies.
+Import maps are used in conjunction with the type="importmap" attribute.
+
+The type="module" attribute indicates that the script is a JavaScript module.
+Modules allow you to use ES6 import/export syntax and provide better encapsulation.
+
+Speculation Rules:
+The type="text/speculation" attribute is not widely used.
+It was proposed as a way to include speculative execution hints for browsers, but it didn’t gain widespread adoption.
+Data Block:
+The type="text/plain" attribute allows you to include non-executable data within a <script> element.
+It won’t be executed as code but can be accessed via JavaScript.
+
+
+
+
+
+
+
+

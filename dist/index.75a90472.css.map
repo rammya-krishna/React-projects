@@ -1,0 +1,1 @@
+{"mappings":"AAAA;;;;AAGA","sources":["app.css"],"sourcesContent":["#firstparent{\r\n    color:purple;\r\n}\r\nbody{\r\n    color: orange;\r\n\r\n}"],"names":[],"version":3,"file":"index.75a90472.css.map","sourceRoot":"/__parcel_source_root/"}
