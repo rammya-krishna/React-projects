@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./app.css">
+</head>
+<body>
+    <h1>Hello react 🚀</h1>
+    <div id="root">
+       
+    </div>
+
+    <!-- using js creating a h1 element and appending inside a root element -->
+    <!-- <script>
+        let heading=document.createElement('h1')
+        heading.innerHTML="Lets start"
+        let root=document.getElementById('root')
+        root.appendChild(heading)
+    </script> -->
+
+
+    <!-- injecting CDN React and react DOM link  -->
+    <!-- REACT
+    React is the core library for building user interfaces in JavaScript, 
+    providing features for creating components, managing state, and handling component lifecycles.
+    
+    REACT DOM
+    ReactDOM, is a package that provides bindings between React and the DOM, 
+    allowing React components to be rendered into the browser and interact with the web page's DOM.
+     -->
+    <script crossorigin src="https://unpkg.com/react@18/umd/react.development.js"></script>
+    <!-- the crossorigin attribute,indicating that the browser should fetch the script without sending any credentials -->
+    <script crossorigin src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"></script>
+    <script src="app.js" async></script>
+        
+</body>
+</html>
